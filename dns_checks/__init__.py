@@ -1,0 +1,1 @@
+# MailT DNS - MX, SPF, DKIM, DMARC, BIMI
