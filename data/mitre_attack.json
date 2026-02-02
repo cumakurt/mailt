@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "description": "MITRE ATT&CK mapping for MailT findings",
+  "mappings": {
+    "dns_no_mx": [
+      { "tactic": "Impact", "technique_id": "T1490", "technique": "Inhibit System Recovery" }
+    ],
+    "dns_no_spf": [
+      { "tactic": "Initial Access", "technique_id": "T1566.001", "technique": "Phishing: Spearphishing Attachment" }
+    ],
+    "spf_softfail": [
+      { "tactic": "Initial Access", "technique_id": "T1566.001", "technique": "Phishing" }
+    ],
+    "spf_lookup_limit": [
+      { "tactic": "Initial Access", "technique_id": "T1566", "technique": "Phishing" }
+    ],
+    "dns_no_dmarc": [
+      { "tactic": "Initial Access", "technique_id": "T1566.001", "technique": "Phishing" }
+    ],
+    "dmarc_policy_none": [
+      { "tactic": "Initial Access", "technique_id": "T1566.001", "technique": "Phishing" }
+    ],
+    "dmarc_policy_quarantine": [
+      { "tactic": "Initial Access", "technique_id": "T1566", "technique": "Phishing" }
+    ],
+    "dns_no_dkim": [
+      { "tactic": "Initial Access", "technique_id": "T1566", "technique": "Phishing" }
+    ],
+    "dns_no_bimi": [],
+    "smtp_banner_disclosure": [
+      { "tactic": "Reconnaissance", "technique_id": "T1595", "technique": "Active Scanning" }
+    ],
+    "smtp_no_starttls": [
+      { "tactic": "Collection", "technique_id": "T1040", "technique": "Network Sniffing" }
+    ],
+    "smtp_vrfy_enabled": [
+      { "tactic": "Reconnaissance", "technique_id": "T1589", "technique": "Gather Victim Identity Information" }
+    ],
+    "smtp_expn_enabled": [
+      { "tactic": "Reconnaissance", "technique_id": "T1589", "technique": "Gather Victim Identity Information" }
+    ],
+    "smtp_open_relay": [
+      { "tactic": "Initial Access", "technique_id": "T1566.001", "technique": "Phishing" },
+      { "tactic": "Command and Control", "technique_id": "T1071.003", "technique": "Application Layer Protocol: Mail Protocols" }
+    ],
+    "tls_weak_protocol": [
+      { "tactic": "Credential Access", "technique_id": "T1040", "technique": "Network Sniffing" }
+    ],
+    "tls_weak_cipher": [
+      { "tactic": "Credential Access", "technique_id": "T1040", "technique": "Network Sniffing" }
+    ]
+  }
+}

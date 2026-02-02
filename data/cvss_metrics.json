@@ -1,0 +1,21 @@
+{
+  "version": "3.1",
+  "description": "CVSS v3.1 metric definitions and severity bands",
+  "severity_bands": [
+    { "min": 0.0, "max": 0.0, "label": "None" },
+    { "min": 0.1, "max": 3.9, "label": "Low" },
+    { "min": 4.0, "max": 6.9, "label": "Medium" },
+    { "min": 7.0, "max": 8.9, "label": "High" },
+    { "min": 9.0, "max": 10.0, "label": "Critical" }
+  ],
+  "metrics": {
+    "AV": { "N": "Network", "A": "Adjacent", "L": "Local", "P": "Physical" },
+    "AC": { "L": "Low", "H": "High" },
+    "PR": { "N": "None", "L": "Low", "H": "High" },
+    "UI": { "N": "None", "R": "Required" },
+    "S": { "U": "Unchanged", "C": "Changed" },
+    "C": { "N": "None", "L": "Low", "H": "High" },
+    "I": { "N": "None", "L": "Low", "H": "High" },
+    "A": { "N": "None", "L": "Low", "H": "High" }
+  }
+}
