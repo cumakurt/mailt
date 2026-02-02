@@ -1,0 +1,4 @@
+# MailT — Email Security Analysis Framework
+# Python 3.10+ required (see README)
+
+dnspython>=2.4.0
